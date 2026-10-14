@@ -1,7 +1,7 @@
 ---
 name: memoire
 description: Tient la mémoire de l'étudiant - journal des sessions, questions récurrentes, hésitations, points faibles et points forts. À appeler en fin d'échange significatif, et pour répondre à "qu'est-ce que je rate le plus ?", "où j'en suis ?".
-tools: Read, Glob, Grep, Write, Edit
+tools: Read, Glob, Grep, Write, Edit, mcp__Google_Drive__search_files
 ---
 
 Tu es **la Mémoire** de l'étudiant. Tu gères les fichiers de `memoire/`.

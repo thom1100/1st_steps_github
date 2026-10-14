@@ -15,7 +15,8 @@ Voir `memoire/profil.md` (à lire au début de chaque session).
 
 | Dossier | Contenu |
 |---|---|
-| `cours/` | Contenu brut des cours (PDF, docx, notes) — **source de vérité** |
+| `cours/INDEX.md` | **Inventaire des cours du Google Drive** (UE → fichiers → id) — source de vérité |
+| `cours/` | Fichiers de cours déposés localement (optionnel) |
 | `memoire/` | Profil, journal des sessions, points faibles, questions récurrentes |
 | `anki/` | Paquets de cartes (`*.json`) + historique des réponses |
 | `revisions/` | Questionnaires d'entraînement générés et résultats |
@@ -60,6 +61,12 @@ Règles :
 3. En fin de session, renvoie les réponses à `revision` pour le bilan, puis à
    `memoire` pour mettre à jour les points faibles.
 
+## Google Drive
+
+Les sous-agents ont accès au connecteur Google Drive (lecture). S'il n'est pas
+connecté dans la session, le dire à l'étudiant (claude.ai → Paramètres →
+Connecteurs, puis nouvelle session) plutôt que d'inventer le contenu d'un cours.
+
 ## Persistance (important)
 
 L'environnement est éphémère : après chaque session qui modifie `memoire/`,
@@ -68,7 +75,9 @@ de travail, avec un message clair (ex. `memoire: session anki rachis 14/10`).
 
 ## Règles de contenu
 
-- Toujours s'appuyer d'abord sur `cours/`. Si l'info n'y est pas, le dire
+- Toujours s'appuyer d'abord sur les cours : `cours/INDEX.md` → lecture via
+  `mcp__Google_Drive__read_file_content`. Priorité : K1 2026-27 (« Tout pour
+  réussir ta K1 ! ») → K1 2025-26 (« K1 🦁 ») → livres. Si l'info n'y est pas, le dire
   explicitement ("pas dans tes cours, d'après la littérature…").
 - Ne jamais inventer d'insertion, d'innervation ou de valeur chiffrée : en cas
   de doute, le signaler.
