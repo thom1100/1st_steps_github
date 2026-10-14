@@ -70,8 +70,8 @@ Connecteurs, puis nouvelle session) plutôt que d'inventer le contenu d'un cours
 ## Persistance (important)
 
 L'environnement est éphémère : après chaque session qui modifie `memoire/`,
-`anki/`, `revisions/`, `fiches/` ou `schemas/`, **commit et push** sur la branche
-de travail, avec un message clair (ex. `memoire: session anki rachis 14/10`).
+`anki/`, `revisions/`, `fiches/` ou `schemas/`, **commit et push** sur `main`
+(directement, ou sur une branche fusionnée dans `main` en fin de session), avec un message clair (ex. `memoire: session anki rachis 14/10`).
 
 ## Règles de contenu
 

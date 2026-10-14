@@ -2,6 +2,7 @@
 
 > À compléter (l'orchestrateur et l'agent mémoire s'en servent pour adapter le niveau).
 
+- **Nom** : Basile Mischler
 - **Année** : K? (ex. K1 / K2 / K3 / K4)
 - **IFMK / ville** :
 - **UE / matières du semestre** :
