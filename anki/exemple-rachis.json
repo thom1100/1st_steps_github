@@ -1,0 +1,15 @@
+{
+  "paquet": "exemple-rachis",
+  "cartes": [
+    {
+      "id": "rachis-001",
+      "recto": "C2 (axis)",
+      "verso": "2e vertèbre cervicale. Corps surmonté du processus odontoïde (dent), qui s'articule avec l'arc antérieur de C1 (atlas) : pivot de la rotation de la tête (articulation atlanto-axoïdienne médiane).",
+      "tags": ["anatomie", "rachis cervical"],
+      "source": "exemple — à remplacer par tes cours",
+      "boite": 1,
+      "prochaine_revision": "2026-10-14",
+      "historique": []
+    }
+  ]
+}
