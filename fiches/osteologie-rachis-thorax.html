@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Ostéologie rachis + thorax</title>
+<style>
+  @page { size: A4; margin: 12mm 12mm 12mm 12mm; }
+  :root {
+    --ink:#1d2433; --mute:#5b6476;
+    --vt:#2563eb; --vt-bg:#e8f0ff;      /* vertèbre type : bleu */
+    --th:#0e9f6e; --th-bg:#e3f8ef;      /* thoracique : vert */
+    --lo:#d97706; --lo-bg:#fff3e0;      /* lombale : orange */
+    --sa:#7c3aed; --sa-bg:#f1eaff;      /* sacrum : violet */
+    --st:#db2777; --st-bg:#fde8f2;      /* sternum + côtes : rose */
+    --warn:#dc2626; --warn-bg:#fdecec;
+  }
+  * { box-sizing:border-box; }
+  body { font-family:"DejaVu Sans", Arial, sans-serif; color:var(--ink); font-size:10.2pt; line-height:1.38; margin:0; background:#fff; }
+  .page { page-break-after:always; }
+  .page:last-child { page-break-after:auto; }
+  h1 { font-size:17pt; margin:0 0 4px; }
+  h2 { font-size:14pt; margin:0 0 8px; padding:6px 10px; border-radius:6px; color:#fff; }
+  h3 { font-size:11pt; margin:10px 0 4px; }
+  p { margin:4px 0; }
+  ul { margin:3px 0 3px 0; padding-left:18px; }
+  li { margin:1.5px 0; }
+  table { border-collapse:collapse; width:100%; font-size:9.4pt; margin:6px 0; }
+  th, td { border:1px solid #cfd5df; padding:4px 6px; vertical-align:top; text-align:left; }
+  th { background:#f2f4f8; }
+  .sub { color:var(--mute); font-size:9pt; }
+  .box { border-radius:8px; padding:7px 10px; margin:7px 0; }
+  .warn { background:var(--warn-bg); border-left:5px solid var(--warn); }
+  .mnemo { background:#fff8d6; border-left:5px solid #e5b400; }
+  .key { background:#f4f6fa; border-left:5px solid #8a94a8; }
+  .row { display:flex; gap:10px; align-items:flex-start; }
+  .col { flex:1; min-width:0; }
+  svg text { font-family:"DejaVu Sans", Arial, sans-serif; }
+  .vt h2{background:var(--vt);} .th h2{background:var(--th);} .lo h2{background:var(--lo);} .sa h2{background:var(--sa);} .st h2{background:var(--st);}
+  .tag { display:inline-block; padding:0 6px; border-radius:4px; font-weight:bold; color:#fff; font-size:8.6pt; }
+  .t-th{background:var(--th);} .t-lo{background:var(--lo);}
+  b.th{color:var(--th);} b.lo{color:var(--lo);} b.sa{color:var(--sa);} b.st{color:var(--st);} b.vt{color:var(--vt);}
+  .cover { border:2px solid #e3e7ef; border-radius:10px; padding:10px 12px; margin-bottom:10px; }
+  .legend span { display:inline-block; margin-right:10px; font-size:9pt; }
+  .dot { display:inline-block; width:10px; height:10px; border-radius:50%; margin-right:4px; vertical-align:middle; }
+  .foot { color:var(--mute); font-size:8pt; margin-top:8px; }
+</style>
+</head>
+<body>
+
+<!-- ============ PAGE 1 : VERTÈBRE TYPE ============ -->
+<section class="page vt">
+  <div class="cover">
+    <h1>Ostéologie du rachis et du thorax — fiche de révision</h1>
+    <div class="sub">Contrôle UE4 · vendredi 16/10/2026 · d'après tes cours K1 2026-27 (Colonne vertébrale, Thorax) et K1 2025-26 (Lombaires et sacrum)</div>
+    <div class="legend" style="margin-top:6px">
+      <span><i class="dot" style="background:var(--vt)"></i>Vertèbre type</span>
+      <span><i class="dot" style="background:var(--th)"></i>Thoracique</span>
+      <span><i class="dot" style="background:var(--lo)"></i>Lombale</span>
+      <span><i class="dot" style="background:var(--sa)"></i>Sacrum</span>
+      <span><i class="dot" style="background:var(--st)"></i>Sternum + côtes</span>
+      <span><i class="dot" style="background:var(--warn)"></i>⚠ ratés au contrôle blanc</span>
+    </div>
+  </div>
+
+  <h2>1 · La vertèbre type</h2>
+  <div class="row">
+    <div class="col">
+      <h3>Les éléments (avec les nombres !)</h3>
+      <ul>
+        <li><b>1 corps vertébral</b> (en avant)</li>
+        <li><b>1 arc vertébral</b> = de chaque côté un <b>pédicule</b> (en avant) + une <b>lame</b> (en arrière)</li>
+        <li><b>1 processus épineux</b> (médian, en arrière)</li>
+        <li><b>2 processus transverses</b></li>
+        <li><b>4 processus articulaires</b> : 2 supérieurs + 2 inférieurs</li>
+        <li>→ ils délimitent le <b>foramen vertébral</b></li>
+      </ul>
+      <div class="box warn">
+        <b>⚠ Limites du foramen vertébral</b> (raté)<br>
+        • en avant : le <b>corps</b><br>
+        • sur les côtés : les <b>pédicules</b><br>
+        • en arrière : les <b>lames</b><br>
+        Foramens superposés = <b>canal vertébral</b> (moelle spinale).
+      </div>
+      <div class="box warn">
+        <b>⚠ Foramen vertébral ≠ foramen transversaire</b><br>
+        Le foramen <i>transversaire</i> est creusé dans le processus transverse des <b>cervicales seulement</b> (artère et veine vertébrales).
+      </div>
+      <p><b>Foramen intervertébral</b> = entre les incisures de 2 pédicules voisins → passage du <b>nerf spinal</b>. L'incisure <b>inférieure</b> du pédicule est la plus marquée.</p>
+    </div>
+    <div class="col" style="flex:0 0 330px">
+      <svg viewBox="0 0 330 330" width="330" height="330" role="img" aria-label="Vertèbre type vue supérieure">
+        <text x="165" y="14" text-anchor="middle" font-size="10" fill="#5b6476">Vue supérieure (schéma) — avant en haut</text>
+        <text x="165" y="30" text-anchor="middle" font-size="9" fill="#5b6476">▲ AVANT</text>
+        <!-- corps -->
+        <ellipse cx="165" cy="85" rx="78" ry="46" fill="#cfe0ff" stroke="#2563eb" stroke-width="2"/>
+        <text x="165" y="80" text-anchor="middle" font-size="11" font-weight="bold" fill="#1e3a8a">CORPS</text>
+        <!-- pédicules -->
+        <rect x="104" y="122" width="22" height="40" rx="5" fill="#93c5fd" stroke="#2563eb" stroke-width="1.5"/>
+        <rect x="204" y="122" width="22" height="40" rx="5" fill="#93c5fd" stroke="#2563eb" stroke-width="1.5"/>
+        <!-- transverses -->
+        <path d="M104 152 L40 168 L40 180 L106 172 Z" fill="#bfdbfe" stroke="#2563eb" stroke-width="1.5"/>
+        <path d="M226 152 L290 168 L290 180 L224 172 Z" fill="#bfdbfe" stroke="#2563eb" stroke-width="1.5"/>
+        <!-- processus articulaires -->
+        <circle cx="112" cy="172" r="10" fill="#fde68a" stroke="#b45309" stroke-width="1.5"/>
+        <circle cx="218" cy="172" r="10" fill="#fde68a" stroke="#b45309" stroke-width="1.5"/>
+        <!-- lames -->
+        <path d="M110 180 L160 222 L170 222 L220 180 L210 172 L165 208 L120 172 Z" fill="#93c5fd" stroke="#2563eb" stroke-width="1.5"/>
+        <!-- épineux -->
+        <path d="M157 220 L173 220 L170 282 L160 282 Z" fill="#bfdbfe" stroke="#2563eb" stroke-width="1.5"/>
+        <!-- foramen -->
+        <path d="M130 138 Q165 128 200 138 L200 160 Q182 196 165 200 Q148 196 130 160 Z" fill="#ffffff" stroke="#dc2626" stroke-width="2" stroke-dasharray="4 2"/>
+        <text x="165" y="160" text-anchor="middle" font-size="9" font-weight="bold" fill="#dc2626">FORAMEN</text>
+        <text x="165" y="171" text-anchor="middle" font-size="9" font-weight="bold" fill="#dc2626">VERTÉBRAL</text>
+        <!-- labels -->
+        <line x1="104" y1="140" x2="60" y2="128" stroke="#334155"/><text x="6" y="126" font-size="9.5">pédicule</text>
+        <line x1="45" y1="174" x2="20" y2="200" stroke="#334155"/><text x="2" y="212" font-size="9.5">proc. transverse</text>
+        <line x1="218" y1="182" x2="262" y2="214" stroke="#334155"/><text x="236" y="226" font-size="9.5">proc. articulaire</text>
+        <line x1="190" y1="198" x2="246" y2="250" stroke="#334155"/><text x="234" y="262" font-size="9.5">lame</text>
+        <line x1="170" y1="268" x2="210" y2="292" stroke="#334155"/><text x="190" y="304" font-size="9.5">proc. épineux</text>
+        <text x="165" y="322" text-anchor="middle" font-size="9" fill="#5b6476">▼ ARRIÈRE</text>
+        <!-- arc bracket -->
+        <text x="30" y="250" font-size="9.5" fill="#2563eb" font-weight="bold">ARC = pédicules</text>
+        <text x="30" y="262" font-size="9.5" fill="#2563eb" font-weight="bold">+ lames</text>
+      </svg>
+    </div>
+  </div>
+
+  <h3>Les chiffres à connaître</h3>
+  <table>
+    <tr><th>Cervicales</th><th>Thoraciques</th><th>Lombales</th><th>Sacrales (soudées)</th><th>Coccyx</th><th>Longueur</th></tr>
+    <tr><td><b>7</b></td><td><b>12</b> <span class="sub">(variation 11 à 13)</span></td><td><b>5</b></td><td><b>5</b> ⚠ pas 6</td><td>3 à 5 <span class="sub">(le cours dit aussi 4 à 6)</span></td><td>≈ <b>75 cm</b></td></tr>
+  </table>
+  <div class="box mnemo"><b>🧠 7 – 12 – 5 – 5</b> → 7 + 12 + 5 = <b>24 vertèbres présacrales</b>.</div>
+</section>
+
+<!-- ============ PAGE 2 : THORACIQUE vs LOMBALE ============ -->
+<section class="page th">
+  <h2>2 · Thoracique <span style="opacity:.8">vs</span> lombale <span style="font-weight:normal;font-size:10pt">(+ rappel cervicale)</span></h2>
+
+  <div class="box warn" style="margin-top:0"><b>⚠ Q6 ratée (0,5/2,5)</b> : c'est LE tableau à savoir. Apprends-le ligne par ligne.</div>
+
+  <table>
+    <tr><th style="width:17%"></th><th style="width:22%">Cervicale</th><th style="width:30%"><span class="tag t-th">THORACIQUE</span></th><th style="width:31%"><span class="tag t-lo">LOMBALE</span></th></tr>
+    <tr><th>Corps</th><td>allongé transversalement, <b>crochets</b> (processus semi-lunaires)</td><td>diamètre transversal ≈ antéro-postérieur ; <b class="th">facettes costales</b></td><td>volumineux, <b class="lo">réniforme</b>, grand axe transversal</td></tr>
+    <tr><th>Foramen vertébral</th><td>triangulaire, <b>large base en avant</b></td><td><b class="th">circulaire</b> (rond)</td><td><b class="lo">triangulaire équilatéral</b></td></tr>
+    <tr><th>Lames</th><td>plus larges que hautes</td><td><b class="th">aussi hautes que larges</b></td><td><b class="lo">plus hautes que larges</b></td></tr>
+    <tr><th>Proc. épineux</th><td><b>bituberculeux</b></td><td>long, <b class="th">très incliné en bas</b> (« tuile »)</td><td><b class="lo">lame rectangulaire, épaisse, horizontale</b> (« hachette »)</td></tr>
+    <tr><th>Proc. transverse</th><td><b>foramen transversaire</b>, 2 tubercules</td><td><b class="th">facette costale</b> à l'extrémité (tubercule de la côte)</td><td><b class="lo">processus costiforme</b> + processus accessoire</td></tr>
+    <tr><th>Surfaces articulaires sup.</th><td>planes, en arrière et en haut (~45°)</td><td>en <b class="th">arrière, en dehors</b>, un peu en haut (~60°)</td><td><b class="lo">concaves</b> (gouttière verticale), regardent <b class="lo">en dedans</b> et un peu en arrière</td></tr>
+  </table>
+
+  <div class="row">
+    <div class="col">
+      <svg viewBox="0 0 340 120" width="340" height="120" role="img" aria-label="Formes des foramens vertébraux">
+        <text x="170" y="12" text-anchor="middle" font-size="10" fill="#5b6476">Forme du foramen vertébral (avant en haut)</text>
+        <polygon points="20,40 100,40 60,95" fill="#eef2f7" stroke="#64748b" stroke-width="2"/>
+        <text x="60" y="113" text-anchor="middle" font-size="10" font-weight="bold">C : triangle</text>
+        <circle cx="170" cy="66" r="28" fill="var(--th-bg)" stroke="#0e9f6e" stroke-width="2.5"/>
+        <text x="170" y="113" text-anchor="middle" font-size="10" font-weight="bold" fill="#0e9f6e">T : rond</text>
+        <polygon points="250,40 310,40 280,92" fill="var(--lo-bg)" stroke="#d97706" stroke-width="2.5"/>
+        <text x="280" y="113" text-anchor="middle" font-size="10" font-weight="bold" fill="#d97706">L : équilatéral</text>
+      </svg>
+      <div class="box mnemo"><b>🧠 « Triangle – Rond – Triangle »</b> de haut en bas.<br><b>Lames qui grandissent</b> : larges (C) → carrées (T) → hautes (L).</div>
+    </div>
+    <div class="col">
+      <svg viewBox="0 0 330 140" width="330" height="140" role="img" aria-label="Processus épineux de profil">
+        <text x="165" y="12" text-anchor="middle" font-size="10" fill="#5b6476">Processus épineux, vue latérale (avant à gauche)</text>
+        <rect x="20" y="30" width="55" height="40" rx="4" fill="var(--th-bg)" stroke="#0e9f6e" stroke-width="2"/>
+        <text x="47" y="55" text-anchor="middle" font-size="9">corps</text>
+        <path d="M85 45 L95 40 L150 118 L140 124 Z" fill="#0e9f6e"/>
+        <text x="80" y="135" text-anchor="middle" font-size="10" font-weight="bold" fill="#0e9f6e">T : tuile qui descend</text>
+        <rect x="180" y="30" width="62" height="46" rx="4" fill="var(--lo-bg)" stroke="#d97706" stroke-width="2"/>
+        <text x="211" y="58" text-anchor="middle" font-size="9">corps</text>
+        <rect x="252" y="40" width="62" height="26" rx="3" fill="#d97706"/>
+        <text x="250" y="135" text-anchor="middle" font-size="10" font-weight="bold" fill="#d97706">L : hachette horizontale</text>
+      </svg>
+      <div class="box mnemo"><b>🧠 Surfaces articulaires lombales</b> = 2 gouttières qui <b>se font face</b> (regard en dedans) → emboîtement → <b>bloque la rotation</b>.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PAGE 3 : THORACIQUES ET LOMBALES PARTICULIÈRES ============ -->
+<section class="page lo">
+  <h2>3 · Vertèbres particulières : reconnaître le niveau</h2>
+  <div class="row">
+    <div class="col">
+      <h3 style="color:var(--th)">Thoraciques : regarde les facettes costales</h3>
+      <table>
+        <tr><th>Niveau</th><th>Facettes du corps</th><th>Facette du transverse</th></tr>
+        <tr><td><b>T1</b></td><td><b>complète</b> en haut (1<sup>re</sup> côte) + demi en bas ; <b>crochets</b></td><td>oui</td></tr>
+        <tr style="background:var(--th-bg)"><td><b>T2 → T9</b><br><span class="sub">« typiques »</span></td><td>2 <b>demi-facettes</b> (sup. + inf.)</td><td>oui</td></tr>
+        <tr><td><b>T10</b></td><td>demi-facette sup. <b>seulement</b> (pas d'inférieure)</td><td>oui</td></tr>
+        <tr><td><b>T11</b></td><td><b>1 facette complète</b></td><td><b>non</b></td></tr>
+        <tr><td><b>T12</b></td><td><b>1 facette complète</b></td><td><b>non</b> + proc. articulaires <b>inf. de type lombal</b></td></tr>
+      </table>
+      <div class="box mnemo"><b>🧠</b> « T1 en a une <b>entière en haut</b>, T10 <b>perd le bas</b>, T11-T12 n'en ont <b>plus qu'une</b>, et pas sur le transverse. »</div>
+      <div class="box key"><b>Méthode « reconnaître »</b> : 1) la région · 2) le niveau précis · 3) <b>justifie en excluant</b> les autres (« ça peut être T11 ou T12 ; c'est T12 car… »).</div>
+      <svg viewBox="0 0 330 120" width="330" height="120" role="img" aria-label="Facettes costales thoraciques vue latérale">
+        <text x="165" y="12" text-anchor="middle" font-size="10" fill="#5b6476">Pourquoi 2 demi-facettes ? (vue latérale)</text>
+        <rect x="40" y="22" width="70" height="36" rx="4" fill="var(--th-bg)" stroke="#0e9f6e" stroke-width="2"/>
+        <rect x="40" y="70" width="70" height="36" rx="4" fill="var(--th-bg)" stroke="#0e9f6e" stroke-width="2"/>
+        <text x="75" y="44" text-anchor="middle" font-size="9">T5</text>
+        <text x="75" y="92" text-anchor="middle" font-size="9">T6</text>
+        <path d="M110 50 a8 8 0 0 1 0 14 Z" fill="#db2777"/>
+        <path d="M110 70 a8 8 0 0 0 0 -0.1 L110 78 a8 8 0 0 0 0 -14" fill="#db2777"/>
+        <rect x="104" y="58" width="12" height="12" fill="#e9d5ff" stroke="#7c3aed"/>
+        <line x1="118" y1="64" x2="300" y2="64" stroke="#db2777" stroke-width="6" stroke-linecap="round"/>
+        <circle cx="120" cy="64" r="9" fill="#db2777"/>
+        <text x="200" y="56" font-size="9.5" fill="#db2777" font-weight="bold">tête de la 6e côte</text>
+        <text x="122" y="104" font-size="9" fill="#5b6476">disque entre les 2 corps → la tête touche</text>
+        <text x="122" y="115" font-size="9" fill="#5b6476">la demi-facette inf. de T5 + la sup. de T6</text>
+      </svg>
+    </div>
+    <div class="col">
+      <h3 style="color:var(--lo)">Lombales : les reliefs propres</h3>
+      <div class="box warn" style="margin-top:0">
+        <b>⚠ Q7 ratée</b><br>
+        • <b>Processus costiforme</b> = processus transverse lombal = une <b>côte lombale soudée</b> (« en forme de côte »).<br>
+        • <b>Processus accessoire</b> = à la <b>base du costiforme</b>, face postérieure (le « vrai » transverse).<br>
+        • <b>Processus mamillaire</b> = sur le <b>bord postérieur du processus articulaire supérieur</b>.
+      </div>
+      <svg viewBox="0 0 330 200" width="330" height="200" role="img" aria-label="Vertèbre lombale vue supérieure">
+        <text x="165" y="12" text-anchor="middle" font-size="10" fill="#5b6476">Lombale, vue supérieure (avant en haut)</text>
+        <path d="M80 30 Q165 10 250 30 Q262 70 230 82 Q165 70 100 82 Q68 70 80 30 Z" fill="var(--lo-bg)" stroke="#d97706" stroke-width="2"/>
+        <text x="165" y="50" text-anchor="middle" font-size="10" font-weight="bold" fill="#92400e">corps réniforme</text>
+        <rect x="118" y="80" width="16" height="30" fill="#fed7aa" stroke="#d97706"/>
+        <rect x="196" y="80" width="16" height="30" fill="#fed7aa" stroke="#d97706"/>
+        <path d="M118 96 L30 92 L30 104 L120 108 Z" fill="#fdba74" stroke="#d97706" stroke-width="1.5"/>
+        <path d="M212 96 L300 92 L300 104 L210 108 Z" fill="#fdba74" stroke="#d97706" stroke-width="1.5"/>
+        <circle cx="122" cy="114" r="4.5" fill="#7c2d12"/>
+        <circle cx="208" cy="114" r="4.5" fill="#7c2d12"/>
+        <ellipse cx="118" cy="126" rx="10" ry="8" fill="#fde68a" stroke="#b45309"/>
+        <ellipse cx="212" cy="126" rx="10" ry="8" fill="#fde68a" stroke="#b45309"/>
+        <circle cx="106" cy="134" r="4.5" fill="#dc2626"/>
+        <circle cx="224" cy="134" r="4.5" fill="#dc2626"/>
+        <path d="M125 132 L160 160 L170 160 L205 132 L200 124 L165 150 L130 124 Z" fill="#fed7aa" stroke="#d97706"/>
+        <rect x="150" y="158" width="30" height="16" fill="#d97706"/>
+        <polygon points="140,90 190,90 165,128" fill="#fff" stroke="#d97706" stroke-dasharray="3 2"/>
+        <line x1="40" y1="98" x2="30" y2="125" stroke="#334155"/><text x="2" y="136" font-size="9.5" font-weight="bold">costiforme</text>
+        <line x1="208" y1="114" x2="268" y2="128" stroke="#334155"/><text x="248" y="140" font-size="9.5" fill="#7c2d12" font-weight="bold">accessoire</text>
+        <line x1="224" y1="134" x2="262" y2="160" stroke="#334155"/><text x="236" y="172" font-size="9.5" fill="#dc2626" font-weight="bold">mamillaire</text>
+        <line x1="118" y1="126" x2="62" y2="160" stroke="#334155"/><text x="6" y="172" font-size="9.5">proc. art. sup.</text>
+        <text x="165" y="192" text-anchor="middle" font-size="9" fill="#5b6476">épineux = hachette horizontale</text>
+      </svg>
+      <div class="box mnemo"><b>🧠 « Mamillaire sur l'Articulaire »</b> · <b>« Accessoire au pied du Costiforme »</b> · <b>Costiforme = côte collée</b>.</div>
+      <h3 style="color:var(--lo)">⚠ L5 (Q5 ratée)</h3>
+      <ul>
+        <li>Corps <b>plus haut en avant qu'en arrière</b> (en coin) → forme le <b>promontoire</b> avec le sacrum</li>
+        <li>Processus articulaires inférieurs <b>plus écartés</b></li>
+        <li>Processus transverses <b>courts et trapus</b> → <b>ligament ilio-lombaire</b></li>
+      </ul>
+      <p><b>L1</b> : processus costiforme moins développé.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PAGE 4 : SACRUM ============ -->
+<section class="page sa">
+  <h2>4 · Le sacrum <span style="font-weight:normal;font-size:10pt">(5 vertèbres sacrales soudées)</span></h2>
+  <div class="row">
+    <div class="col" style="flex:0 0 345px">
+      <svg viewBox="0 0 345 390" width="345" height="390" role="img" aria-label="Face postérieure du sacrum">
+        <text x="172" y="12" text-anchor="middle" font-size="10.5" font-weight="bold" fill="#7c3aed">⚠ FACE POSTÉRIEURE (Q8 ratée, tombe aux annales)</text>
+        <!-- contour -->
+        <path d="M40 40 L305 40 L230 330 L115 330 Z" fill="var(--sa-bg)" stroke="#7c3aed" stroke-width="2"/>
+        <!-- fosse criblée -->
+        <path d="M40 40 L75 40 L80 120 L58 110 Z" fill="#ddd6fe"/>
+        <path d="M305 40 L270 40 L265 120 L287 110 Z" fill="#ddd6fe"/>
+        <!-- crête médiane -->
+        <line x1="172" y1="44" x2="172" y2="296" stroke="#dc2626" stroke-width="7" stroke-linecap="round"/>
+        <!-- gouttières -->
+        <path d="M152 46 L150 300" stroke="#a5b4fc" stroke-width="16" opacity=".55"/>
+        <path d="M192 46 L194 300" stroke="#a5b4fc" stroke-width="16" opacity=".55"/>
+        <!-- crêtes intermédiaires -->
+        <line x1="130" y1="46" x2="140" y2="300" stroke="#2563eb" stroke-width="5" stroke-linecap="round"/>
+        <line x1="214" y1="46" x2="204" y2="300" stroke="#2563eb" stroke-width="5" stroke-linecap="round"/>
+        <!-- foramens dorsaux -->
+        <g fill="#1d2433">
+          <circle cx="114" cy="85" r="7"/><circle cx="120" cy="145" r="6.5"/><circle cx="126" cy="205" r="6"/><circle cx="131" cy="260" r="5.5"/>
+          <circle cx="230" cy="85" r="7"/><circle cx="224" cy="145" r="6.5"/><circle cx="218" cy="205" r="6"/><circle cx="213" cy="260" r="5.5"/>
+        </g>
+        <!-- crêtes latérales -->
+        <line x1="92" y1="46" x2="118" y2="310" stroke="#0e9f6e" stroke-width="5" stroke-linecap="round"/>
+        <line x1="252" y1="46" x2="226" y2="310" stroke="#0e9f6e" stroke-width="5" stroke-linecap="round"/>
+        <!-- hiatus -->
+        <path d="M156 300 L162 330 M188 300 L182 330" stroke="#dc2626" stroke-width="4"/>
+        <path d="M162 300 Q172 318 182 300" fill="#fff" stroke="#7c3aed"/>
+        <!-- légende numérotée en haut -->
+        <g font-size="10" font-weight="bold" text-anchor="middle">
+          <text x="172" y="34" fill="#dc2626">1</text>
+          <text x="152" y="34" fill="#6366f1">2</text>
+          <text x="130" y="34" fill="#2563eb">3</text>
+          <text x="110" y="74" fill="#1d2433">4</text>
+          <text x="92" y="34" fill="#0e9f6e">5</text>
+          <text x="58" y="34" fill="#7c3aed">6</text>
+        </g>
+        <text x="172" y="350" text-anchor="middle" font-size="9.5" fill="#dc2626">cornes sacrales → hiatus sacral</text>
+        <text x="172" y="366" text-anchor="middle" font-size="9" fill="#5b6476">base en HAUT · apex en BAS (→ coccyx)</text>
+        <text x="172" y="382" text-anchor="middle" font-size="9" fill="#5b6476">4 foramens dorsaux de chaque côté</text>
+      </svg>
+    </div>
+    <div class="col">
+      <h3>De la ligne médiane vers le dehors</h3>
+      <table>
+        <tr><th>#</th><th>Relief</th><th>Vient de…</th></tr>
+        <tr><td style="color:#dc2626"><b>1</b></td><td><b>Crête sacrale médiane</b></td><td>processus <b>Épineux</b></td></tr>
+        <tr><td style="color:#6366f1"><b>2</b></td><td><b>Gouttière sacrale</b></td><td><b>Lames</b></td></tr>
+        <tr><td style="color:#2563eb"><b>3</b></td><td><b>Crête sacrale intermédiaire</b></td><td>processus <b>Articulaires</b></td></tr>
+        <tr><td><b>4</b></td><td><b>Foramens sacraux dorsaux</b> (×4)</td><td>orifices → <b>branches postérieures</b> des nerfs sacraux</td></tr>
+        <tr><td style="color:#0e9f6e"><b>5</b></td><td><b>Crête sacrale latérale</b> (tubercules conjugués)</td><td>processus <b>Transverses</b></td></tr>
+        <tr><td style="color:#7c3aed"><b>6</b></td><td><b>Fosse criblée</b></td><td>zone rugueuse latérale (ligaments)</td></tr>
+      </table>
+      <div class="box mnemo"><b>🧠 É – L – A – T</b> : <b>É</b>pineux → <b>L</b>ames → <b>A</b>rticulaires → <b>T</b>ransverses.<br>Les foramens dorsaux se glissent <b>entre A et T</b>.<br>= une vertèbre type « aplatie et soudée ».</div>
+
+      <h3>Face antérieure (pelvienne)</h3>
+      <ul>
+        <li>concave ; 5 corps séparés par <b>4 crêtes transversales</b></li>
+        <li><b>4 foramens sacraux pelviens</b> de chaque côté → <b>branches antérieures</b> des nerfs sacraux (plus grands)</li>
+        <li>insertion du <b>muscle piriforme</b> (autour des 2<sup>e</sup>-3<sup>e</sup> foramens)</li>
+      </ul>
+      <div class="box mnemo"><b>🧠 Pelvien = devant = branche antérieure · Dorsal = dos = branche postérieure.</b></div>
+
+      <h3>Base, faces latérales, apex</h3>
+      <ul>
+        <li><b>Base</b> (en haut) : plateau de S1, orifice du canal sacral, <b>ailes sacrales</b>, processus articulaires sup. de S1</li>
+        <li><b>Faces latérales</b> : <b>surface auriculaire</b> (en forme d'oreille, S1-S2) ↔ <b>os coxal</b></li>
+        <li><b>Apex</b> (en bas) : s'articule avec le <b>coccyx</b></li>
+      </ul>
+      <div class="box warn"><b>⚠ Promontoire</b> (angle sacro-vertébral) : <b>126° homme · 118° femme</b>.<br>🧠 « <b>F</b>emme = <b>F</b>ermé = 118 ».</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PAGE 5 : STERNUM + CÔTES ============ -->
+<section class="page st">
+  <h2>5 · Sternum et côtes</h2>
+  <div class="box warn" style="margin-top:0"><b>⚠ STERNUM ≠ SACRUM</b> : au contrôle blanc, tu as répondu « crête sacrale » pour le sternum. <b>Relis le mot deux fois !</b></div>
+  <div class="row">
+    <div class="col" style="flex:0 0 300px">
+      <svg viewBox="0 0 300 360" width="300" height="360" role="img" aria-label="Sternum vue antérieure">
+        <text x="150" y="12" text-anchor="middle" font-size="10" fill="#5b6476">Sternum, vue antérieure</text>
+        <!-- manubrium -->
+        <path d="M105 40 Q115 30 130 38 Q150 50 170 38 Q185 30 195 40 L185 105 L115 105 Z" fill="#fbcfe8" stroke="#db2777" stroke-width="2"/>
+        <text x="150" y="80" text-anchor="middle" font-size="10" font-weight="bold" fill="#9d174d">MANUBRIUM</text>
+        <!-- corps -->
+        <path d="M117 109 L183 109 L188 250 L170 285 L130 285 L112 250 Z" fill="var(--st-bg)" stroke="#db2777" stroke-width="2"/>
+        <text x="150" y="200" text-anchor="middle" font-size="10" font-weight="bold" fill="#9d174d">CORPS</text>
+        <!-- xiphoïde -->
+        <path d="M138 288 L162 288 L150 330 Z" fill="#fff" stroke="#db2777" stroke-width="2"/>
+        <!-- angle -->
+        <line x1="108" y1="107" x2="192" y2="107" stroke="#dc2626" stroke-width="3"/>
+        <!-- incisures costales -->
+        <g fill="#db2777">
+          <rect x="104" y="48" width="8" height="12"/><rect x="188" y="48" width="8" height="12"/>
+          <rect x="106" y="101" width="8" height="12" fill="#dc2626"/><rect x="186" y="101" width="8" height="12" fill="#dc2626"/>
+          <rect x="109" y="140" width="8" height="10"/><rect x="183" y="140" width="8" height="10"/>
+          <rect x="110" y="175" width="8" height="10"/><rect x="182" y="175" width="8" height="10"/>
+          <rect x="111" y="210" width="8" height="10"/><rect x="181" y="210" width="8" height="10"/>
+          <rect x="114" y="242" width="8" height="10"/><rect x="178" y="242" width="8" height="10"/>
+          <rect x="124" y="270" width="8" height="10"/><rect x="168" y="270" width="8" height="10"/>
+        </g>
+        <g font-size="9" fill="#9d174d" text-anchor="end">
+          <text x="100" y="58">1</text><text x="102" y="111" fill="#dc2626" font-weight="bold">2</text><text x="105" y="149">3</text><text x="106" y="184">4</text><text x="107" y="219">5</text><text x="110" y="251">6</text><text x="120" y="279">7</text>
+        </g>
+        <!-- labels -->
+        <line x1="150" y1="44" x2="150" y2="22" stroke="#334155"/><text x="158" y="26" font-size="9">incisure jugulaire</text>
+        <line x1="112" y1="38" x2="40" y2="30" stroke="#334155"/><text x="2" y="24" font-size="9">incisure claviculaire</text>
+        <line x1="192" y1="107" x2="230" y2="125" stroke="#dc2626"/><text x="208" y="138" font-size="9" fill="#dc2626" font-weight="bold">angle sternal</text><text x="208" y="149" font-size="9" fill="#dc2626" font-weight="bold">(de Louis)</text><text x="208" y="160" font-size="9" fill="#dc2626">= niveau 2e côte</text>
+        <line x1="156" y1="315" x2="215" y2="320" stroke="#334155"/><text x="200" y="334" font-size="9">processus xiphoïde</text>
+        <text x="150" y="352" text-anchor="middle" font-size="9" fill="#5b6476">7 incisures costales par bord (6 intercostales entre)</text>
+      </svg>
+    </div>
+    <div class="col">
+      <h3 style="color:var(--st)">Sternum</h3>
+      <ul>
+        <li>3 parties de haut en bas : <b>manubrium → corps → processus xiphoïde</b></li>
+        <li><b>Angle sternal (de Louis)</b> = union manubrium/corps, saillant en avant</li>
+        <li>Bord supérieur : <b>incisure jugulaire</b> (médiane) + 2 <b>incisures claviculaires</b></li>
+        <li>Chaque bord latéral : <b>7 incisures costales</b> ; la <b>2<sup>e</sup></b> est à l'angle sternal</li>
+        <li>Xiphoïde : mince, souvent cartilagineux, parfois bifide ou percé</li>
+      </ul>
+      <div class="box mnemo"><b>🧠 L'épée</b> : manubrium = poignée, corps = lame, xiphoïde (<i>xiphos</i> = épée) = pointe.<br><b>Repère clinique</b> : doigt sur l'angle de Louis = 2<sup>e</sup> côte → on compte à partir de là.</div>
+
+      <h3 style="color:var(--st)">Côtes : 12 paires, « 7 – 3 – 2 »</h3>
+      <svg viewBox="0 0 330 150" width="330" height="150" role="img" aria-label="Classification des côtes">
+        <rect x="290" y="6" width="22" height="92" rx="4" fill="#fbcfe8" stroke="#db2777"/>
+        <text x="301" y="112" text-anchor="middle" font-size="8.5" fill="#9d174d">sternum</text>
+        <g stroke-width="4" stroke-linecap="round">
+          <line x1="20" y1="12" x2="250" y2="12" stroke="#0e9f6e"/><line x1="250" y1="12" x2="290" y2="12" stroke="#a7f3d0"/>
+          <line x1="20" y1="26" x2="250" y2="26" stroke="#0e9f6e"/><line x1="250" y1="26" x2="290" y2="26" stroke="#a7f3d0"/>
+          <line x1="20" y1="40" x2="250" y2="40" stroke="#0e9f6e"/><line x1="250" y1="40" x2="290" y2="40" stroke="#a7f3d0"/>
+          <line x1="20" y1="54" x2="250" y2="54" stroke="#0e9f6e"/><line x1="250" y1="54" x2="290" y2="54" stroke="#a7f3d0"/>
+          <line x1="20" y1="68" x2="250" y2="68" stroke="#0e9f6e"/><line x1="250" y1="68" x2="290" y2="68" stroke="#a7f3d0"/>
+          <line x1="20" y1="82" x2="250" y2="82" stroke="#0e9f6e"/><line x1="250" y1="82" x2="290" y2="82" stroke="#a7f3d0"/>
+          <line x1="20" y1="96" x2="245" y2="96" stroke="#0e9f6e"/><line x1="245" y1="96" x2="290" y2="94" stroke="#a7f3d0"/>
+          <line x1="20" y1="108" x2="235" y2="108" stroke="#d97706"/><path d="M235 108 Q262 108 268 96" fill="none" stroke="#fde68a"/>
+          <line x1="20" y1="120" x2="225" y2="120" stroke="#d97706"/><path d="M225 120 Q250 120 258 108" fill="none" stroke="#fde68a"/>
+          <line x1="20" y1="132" x2="215" y2="132" stroke="#d97706"/><path d="M215 132 Q240 132 248 120" fill="none" stroke="#fde68a"/>
+          <line x1="20" y1="142" x2="150" y2="142" stroke="#64748b"/>
+          <line x1="20" y1="149" x2="110" y2="149" stroke="#64748b"/>
+        </g>
+        <text x="24" y="50" font-size="9" fill="#065f46" font-weight="bold">1-7 VRAIES</text>
+        <text x="24" y="117" font-size="9" fill="#92400e" font-weight="bold">8-10 FAUSSES</text>
+        <text x="160" y="147" font-size="9" fill="#334155" font-weight="bold">11-12 FLOTTANTES</text>
+      </svg>
+      <ul>
+        <li><b style="color:#0e9f6e">Vraies (1-7)</b> : leur cartilage va <b>directement au sternum</b></li>
+        <li><b style="color:#d97706">Fausses (8-10)</b> : cartilage → <b>cartilage de la côte du dessus</b></li>
+        <li><b style="color:#64748b">Flottantes (11-12)</b> : extrémité antérieure <b>libre</b></li>
+      </ul>
+      <p class="sub">⚠ L'atlas 2025-26 dit « fausses 8-12 » (flottantes incluses) : suis ton cours 2026-27 (8-10).</p>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col" style="flex:0 0 330px">
+      <svg viewBox="0 0 330 105" width="330" height="105" role="img" aria-label="Extrémité postérieure de la côte">
+        <text x="165" y="12" text-anchor="middle" font-size="10" fill="#5b6476">Extrémité postérieure d'une côte (de dedans en dehors)</text>
+        <rect x="8" y="30" width="40" height="44" rx="4" fill="var(--th-bg)" stroke="#0e9f6e"/><text x="28" y="56" text-anchor="middle" font-size="8.5">corps</text><text x="28" y="66" text-anchor="middle" font-size="8.5">vert.</text>
+        <rect x="70" y="80" width="80" height="12" rx="3" fill="var(--th-bg)" stroke="#0e9f6e"/><text x="110" y="100" text-anchor="middle" font-size="8.5">proc. transverse</text>
+        <circle cx="62" cy="52" r="13" fill="#db2777"/>
+        <path d="M74 48 L120 56 L120 66 L74 58 Z" fill="#f472b6"/>
+        <circle cx="126" cy="66" r="9" fill="#9d174d"/>
+        <path d="M134 60 Q220 40 320 70 L320 82 Q220 54 134 74 Z" fill="#fbcfe8" stroke="#db2777"/>
+        <text x="62" y="30" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#db2777">TÊTE</text>
+        <text x="98" y="44" text-anchor="middle" font-size="9.5" font-weight="bold" fill="#db2777">COL</text>
+        <text x="150" y="98" font-size="9.5" font-weight="bold" fill="#9d174d">TUBERCULE</text>
+        <text x="210" y="40" font-size="9.5" fill="#9d174d">corps de la côte</text>
+      </svg>
+    </div>
+    <div class="col">
+      <div class="box mnemo"><b>🧠 Tête → corps vertébral · Tubercule → processus transverse.</b><br>(d'où les facettes costales des thoraciques)</div>
+      <ul>
+        <li><b>1<sup>re</sup> côte</b> : la plus courte et la plus large, aplatie de haut en bas ; <b>tubercule du scalène antérieur</b> : <b>veine</b> subclavière <b>en avant</b>, <b>artère</b> en arrière (🧠 « VA ») ; tête à 1 facette, pas de sillon</li>
+        <li><b>11<sup>e</sup>-12<sup>e</sup></b> : <b>pas de tubercule</b>, tête à 1 facette</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PAGE 6 : CHECK-LIST ============ -->
+<section class="page vt">
+  <h2>6 · Check-list express : 5 min avant le contrôle</h2>
+  <p>Cache la colonne de droite et récite. Tout ce qui est en <span style="color:var(--warn);font-weight:bold">rouge</span> a été raté au contrôle blanc.</p>
+  <table>
+    <tr><th style="width:52%">Question</th><th>Réponse</th></tr>
+    <tr><td>Limites du foramen vertébral ?</td><td style="color:var(--warn)"><b>corps</b> (avant), <b>pédicules</b> (côtés), <b>lames</b> (arrière)</td></tr>
+    <tr><td>Nombre de vertèbres ?</td><td style="color:var(--warn)"><b>7-12-5-5</b> · 24 présacrales · 75 cm · T 11 à 13</td></tr>
+    <tr><td>Foramen vertébral C / T / L ?</td><td style="color:var(--warn)">triangle large · <b>rond</b> · <b>triangle équilatéral</b></td></tr>
+    <tr><td>Lames T / L ?</td><td style="color:var(--warn)">aussi hautes que larges · <b>plus hautes que larges</b></td></tr>
+    <tr><td>Surfaces articulaires sup. lombales ?</td><td style="color:var(--warn)"><b>concaves</b>, regardent <b>en dedans</b></td></tr>
+    <tr><td>Thoracique typique ?</td><td><b>T2 à T9</b> (T1 facette entière en haut, T10 sans demi-facette inf., T11-12 facette unique)</td></tr>
+    <tr><td>T11 ou T12 ?</td><td><b>T12</b> = proc. articulaires inf. de type lombal</td></tr>
+    <tr><td>Reconnaître L5 ?</td><td style="color:var(--warn)">corps <b>plus haut en avant</b> · art. inf. écartés · <b>ligament ilio-lombaire</b></td></tr>
+    <tr><td>Costiforme / accessoire / mamillaire ?</td><td style="color:var(--warn)">côte soudée · base du costiforme · <b>sur le proc. articulaire sup.</b></td></tr>
+    <tr><td>Face post. du sacrum ?</td><td style="color:var(--warn)"><b>É-L-A-T</b> : crête médiane · gouttière · crête intermédiaire · foramens dorsaux · crête latérale · fosse criblée</td></tr>
+    <tr><td>Foramens pelviens / dorsaux ?</td><td style="color:var(--warn)">branches <b>antérieures</b> / <b>postérieures</b> des nerfs sacraux (×4)</td></tr>
+    <tr><td>Promontoire ?</td><td style="color:var(--warn)"><b>126° homme / 118° femme</b></td></tr>
+    <tr><td>Sternum : parties + incisures ?</td><td style="color:var(--warn)">manubrium, corps, xiphoïde · jugulaire + 2 claviculaires · 7 costales</td></tr>
+    <tr><td>Angle de Louis ?</td><td style="color:var(--warn)">manubrium/corps = <b>2<sup>e</sup> côte</b></td></tr>
+    <tr><td>Classement des côtes ?</td><td style="color:var(--warn)"><b>7 vraies – 3 fausses – 2 flottantes</b></td></tr>
+    <tr><td>Extrémité post. de la côte ?</td><td style="color:var(--warn)"><b>tête – col – tubercule</b></td></tr>
+  </table>
+  <div class="box warn"><b>Les 2 pièges perso</b> : <b>sternum ≠ sacrum</b> · <b>foramen vertébral ≠ foramen transversaire</b> (cervicales).</div>
+  <div class="box key"><b>Au contrôle</b> : donne toujours les <b>nombres</b> (2 transverses, 4 articulaires…) et <b>justifie</b> tes reconnaissances en excluant les autres niveaux.</div>
+  <p class="foot">Sources : K1 2026-27, UE4 Anatomie TC, Colonne vertébrale et Thorax (d'après Rouvière-Delmas) ; K1 2025-26, Cours lombaires et sacrum. Les schémas sont simplifiés, ils ne respectent pas les proportions.</p>
+</section>
+
+</body>
+</html>
