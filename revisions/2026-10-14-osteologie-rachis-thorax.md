@@ -154,3 +154,29 @@ Pour aller plus loin, si l'étudiant développe :
   Réponse : sur le tubercule du muscle scalène antérieur, sur la face supérieure. La veine subclavière passe dans la gouttière antérieure, l'artère subclavière dans la gouttière postérieure. [TH] 2-A.
 - Quel muscle s'insère sur la face antérieure du sacrum, autour des 2e et 3e foramens sacraux pelviens ?
   Réponse : le muscle piriforme. [CV] 4-A.
+
+---
+
+## Résultats 15/10
+
+**Note : 4,5 / 20**
+
+| Q | Note | Commentaire |
+|---|---|---|
+| Q1 vertèbre type | 1 / 2 | éléments cités sans les nombres ; « foramen transverse » au lieu de foramen vertébral ; limites du foramen vertébral non connues |
+| Q2 QCM chiffres | 0 / 1,5 | sacrum « 6 vertèbres » (5) ; thoraciques « 10 à 12 » (11 à 13) ; E non répondu |
+| Q3 thoracique T2-T9 | 1 / 2 | région thoracique juste ; T10 inclus à tort ; pas de justification |
+| Q4 T12 | 1,5 / 2 | T12 juste ; T11 non cité comme alternative |
+| Q5 L5 | 0,25 / 1,5 | « lombale » sans niveau ; caractère non spécifique |
+| Q6 thoracique vs lombale | 0,5 / 2,5 | lames, foramen, surfaces articulaires faux ; épineux lombal décrit « long et étroit » |
+| Q7 costiforme / accessoire / mamillaire | 0 / 1,5 | non su |
+| Q8 face postérieure du sacrum | 0 / 3 | non su |
+| Q9 promontoire, foramens sacraux | 0,25 / 1,5 | « nerfs sacraux » sans préciser branches antérieures / postérieures ; angles non donnés |
+| Q10 sternum | 0 / 1,5 | sternum confondu avec le sacrum |
+| Q11 côtes | 0 / 1 | non su |
+
+**Bilan**
+- Acquis partiels : reconnaissance d'une thoracique, T12.
+- Priorités avant le contrôle du 16/10 : sternum (et distinction sternum/sacrum), côtes, face postérieure du sacrum, chiffres (5 sacrales, 11 à 13 thoraciques), comparatif thoracique/lombale.
+- Confusions à corriger : sternum/sacrum ; foramen vertébral/foramen transverse.
+- Points faibles mis à jour dans `memoire/points-faibles.md`.
